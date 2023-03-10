@@ -1,1 +1,1 @@
-# k8s
+# Kubernetes sample scripts
