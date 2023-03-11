@@ -48,6 +48,9 @@ module "eks_blueprints" {
       node_group_name = local.node_group_name
       instance_types  = ["t3.medium"]
       subnet_ids      = module.vpc.private_subnets
+      min_size     = 1
+      max_size     = 10
+      desired_size = 3
     }
   }
 
