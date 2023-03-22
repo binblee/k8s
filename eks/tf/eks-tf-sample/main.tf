@@ -44,13 +44,14 @@ module "eks_blueprints" {
 
   # EKS MANAGED NODE GROUPS
   managed_node_groups = {
-    mg_5 = {
+    mng1 = {
       node_group_name = local.node_group_name
-      instance_types  = ["t3.medium"]
+      instance_types  = ["m5.large"]
       subnet_ids      = module.vpc.private_subnets
       min_size     = 1
       max_size     = 10
       desired_size = 3
+      disk_size    = 100 # disk_size will be ignored when using Launch Templates
     }
   }
 

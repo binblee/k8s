@@ -5,10 +5,11 @@ Create EKS cluster with one click install. Resources that will be created:
 - a new VPC, name 'eks-tf-sample', same as current directory name
   - in your default region
   - CIDR "10.0.0.0/16"
-  - 3 AZ
+  - 2 AZ
 - a new EKS cluster, name as 'eks-tf-sample'
   - version 1.25
-  - 1 managed nodegroup: 3 nodes (type t3.medium) in 3 private subnet
+  - 1 managed nodegroup: 3 nodes (type m5.large) private subnet
+    - disk size 100G
   - EKS addons: CoreDNS, kube-proxy, VPC CNI
   - K8s addons: AWS Load Balancer Controller
   - KMS enabled
