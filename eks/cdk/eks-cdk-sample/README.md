@@ -11,6 +11,7 @@ Install [AWS CDK Toolkit](https://www.npmjs.com/package/aws-cdk) with below comm
 
 ```
 npm install -g aws-cdk@2.72.0
+npm i @aws-quickstart/eks-blueprint
 ```
 
 ## Configure environment and bootstrap
